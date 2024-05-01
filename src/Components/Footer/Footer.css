@@ -1,68 +1,56 @@
-
-.detail-bar{
-    background-color: rgb(185, 229, 243);
-padding: 15px;
-padding-top: 25px;
-}
-.footer-wrapp{
-    display: flex;
-justify-content: center;
-    column-gap:2rem;
+.footer-container {
+  background-color: aliceblue;
 }
 
-.footerbox{
-    width: 25%;
-
-}
-.media-icon{
-    display: flex;
-    justify-content: center;
-text-align: center;
-gap: 1.75rem;
-padding: 10px;
-} 
-
-i{
-    font-size: x-large;
+.footer-wrapp {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-evenly;
 }
 
-
-.last-bar{
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(95, 193, 223);
-
+.footerbox {
+  width: 100%; /* Adjust width for smaller screens */
+  max-width: 300px; /* Set maximum width for better readability */
+  margin-bottom: 20px; /* Add margin between footer boxes */
 }
 
-.last-bar p{
-    font-weight: 600;
-    font-size:medium;
-    /* color: rgb(6, 168, 222); */
-    color: white;
+.last-bar {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(95, 193, 223);
 }
 
-
-
-
-.list-ul{
-    list-style: none;
-    column-gap: 1.5rem;
+.last-bar p {
+  font-weight: 600;
+  font-size: medium;
+  color: white;
 }
 
-
-
-.location{
-    list-style: none;
+.list-ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center list items */
 }
 
+.list-ul a {
+  text-decoration: none; /* Remove default underline for links */
+}
 
+.location {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center location details */
+}
 
-      .footerbox h3{
-        color: rgb(6, 168, 222);
+.media-icon {
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+  padding: 10px;
+}
 
-      }  
-
-      .media-icon h4{
-        color: rgb(6, 168, 222);
-
-      }
+@media screen and (min-width: 978px) {
+  .footerbox {
+    width: 25%; /* Adjust width for larger screens */
+  }
+}

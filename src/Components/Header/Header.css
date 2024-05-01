@@ -1,50 +1,92 @@
+.nav-icon {
+  display: flex;
+  column-gap: 0.2rem;
+  align-items: center;
+}
 
+.header-container {
+  background-color: rgb(223, 247, 255);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
 
-.nav-icon{
+h2 {
+  font-family: "Playfair Display", serif;
+  color: rgb(6, 168, 222);
+  font-weight: 800;
+  margin-left: 0.125rem;
+}
+
+.nav-titles {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 0.8125rem;
+  font-weight: 800;
+  gap: 1.75rem;
+}
+
+li {
+  cursor: pointer;
+  color: rgb(6, 168, 222);
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+.menu-btn {
+  display: none;
+}
+
+.menu-icon {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(6, 168, 222);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu-icon.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive styles for the navigation menu */
+@media screen and (max-width: 978px) {
+  .menu-btn {
+    display: block;
+    
+  }
+
+  .nav-titles.open {
     display: flex;
-    /* justify-content: space-around; */
-    column-gap: 0.2rem;
-    align-items: center;
-  
-}
+    flex-direction: column;
+    background-color: rgb(223, 247, 255);
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+  }
 
-.header-container{
-    background-color: rgb(255, 255, 255);
-    background-color: rgb(216, 239, 246);
-    padding: 5px;
+  .list {
+    display: none;
+  }
 
-}
-
-
-.navigation{
-    display: flex;justify-content: space-between;
-
-}
-h2{
-    font-family: 'Playfair Display', serif;
-    color: rgb(6, 168, 222);
-    font-weight:800;
-   
-    margin-left: 2px;
-
-}
-
-.nav-titles{
-    display: flex;
-    justify-content: end;
-}
-
-.list{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-top: 13px;
-    font-weight: 800;
-    gap: 1.75rem;
-}
-li{
-    cursor: pointer;
-    color: rgb(6, 168, 222);
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
+  .list li {
+    text-align: center;
+  }
 }
