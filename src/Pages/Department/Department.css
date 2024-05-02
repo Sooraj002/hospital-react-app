@@ -42,7 +42,6 @@
 
 /* Media Query for responsiveness */
 @media screen and (max-width: 978px) {
-  .contain{margin-bottom: 10rem;}
   .depart-wrapper {
     flex-direction: column;
     align-items: center;

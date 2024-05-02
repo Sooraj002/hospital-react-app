@@ -1,38 +1,35 @@
-.contain-box{
-    height: 1700px;
-    padding: 0px 80px 0px 80px;
-
+.contain-box {
+  height: fit-content;
+  padding: 0px 80px 0px 80px;
 }
 
-.details h2{
-    font-family: 'Playfair Display', serif;
-    font-weight:600
+.details h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
-.details p{
-margin-top: 15px;
+.details p {
+  margin-top: 15px;
 }
-.details h4{
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-}
-
-
-
-.details h5{
-font-weight: 400;
+.details h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
-.boxwrap{
-    display: flex;
-    margin-top: 35px;
+.details h5 {
+  font-weight: 400;
 }
 
-.image{
-    margin-top: 30px;
+.boxwrap {
+  display: flex;
+  margin-top: 35px;
 }
-.head4 h4{
-    font-family: 'Playfair Display', serif;
 
-font-weight:700 ;
+.image {
+  margin-top: 30px;
+}
+.head4 h4 {
+  font-family: "Playfair Display", serif;
+
+  font-weight: 700;
 }

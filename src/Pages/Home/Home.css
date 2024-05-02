@@ -35,10 +35,11 @@
 /* Media Query for responsiveness */
 @media screen and (max-width: 978px) {
   .home {
-    display: inline;}
-    .main {
-      display: none;
-    }
+    display: inline;
+  }
+  .main {
+    display: none;
+  }
 
   .main .heading {
     font-size: 1.5rem; /* Adjust font size for smaller screens */

@@ -25,31 +25,36 @@ function Header() {
             <h2>Heaven Care Hospital</h2>
           </Link>
         </div>
-        <div className={`nav-titles ${menuOpen ? "open" : ""}`}>
-          <ul className="list">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/aboutus">About Us</Link>
-            </li>
-            <li>
-              <Link to="/make-an-appointment">Make an Appointment</Link>
-            </li>
-            <li>
-              <Link to="/department">Departments</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="menu-btn" onClick={toggleMenu}>
-          <div className={`menu-icon ${menuOpen ? "open" : ""}`}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
+        <ul className={`list ${menuOpen ? "show" : ""}`}>
+          <li>
+            <Link to="/" onClick={toggleMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/aboutus" onClick={toggleMenu}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/make-an-appointment" onClick={toggleMenu}>
+              Make an Appointment
+            </Link>
+          </li>
+          <li>
+            <Link to="/department" onClick={toggleMenu}>
+              Departments
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={toggleMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+
+        <div className="menu-btn">
+          menu
         </div>
       </div>
     </header>

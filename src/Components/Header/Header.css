@@ -60,6 +60,9 @@ li {
 .menu-icon.open .bar:nth-child(2) {
   opacity: 0;
 }
+.header-container button {
+  display: none;
+}
 
 .menu-icon.open .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
@@ -67,9 +70,8 @@ li {
 
 /* Responsive styles for the navigation menu */
 @media screen and (max-width: 978px) {
-  .menu-btn {
-    display: block;
-    
+  .header-container button {
+    display: flex;
   }
 
   .nav-titles.open {
@@ -89,4 +91,10 @@ li {
   .list li {
     text-align: center;
   }
+  .offcanvas {
+    width: 25rem;
+    left: 0;
+  }
+  
+  
 }
